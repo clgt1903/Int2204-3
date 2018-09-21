@@ -2,14 +2,14 @@ package JavaWeek2;
 
 public class StudentManagement {
 	public static Student[] students = new Student[100];
-
+	// Xét xem 2 sinh viên có cùng lớp hay không
 	public boolean sameGroup(Student s1, Student s2) {
 		boolean result = s1.getGroup().equals(s2.getGroup());
 		return result;
 	}
 
 	// in danh sách sinh viên theo lớp
-	public void studentByGroup() {
+	public static void studentByGroup() {
 		for (int i = 0; i < students.length - 1; i++)
 			for (int j = 0; j < students.length; j++)
 				if (students[i].getGroup().compareTo(students[i].getGroup()) < 0) {
@@ -34,8 +34,8 @@ public class StudentManagement {
 		}
 
 	}
-
-	public void removeStudent(String newid) {
+	// Xóa sinh viên theo id
+	public static void removeStudent(String newid) {
 		int n = students.length;
 		for (int i = 0; i < n; i++)
 			if (students[i].getGroup() == newid) {
@@ -97,6 +97,5 @@ public class StudentManagement {
 		else
 			System.out.println("st1 and st3 aren't same Group\n\n");
 
-
-		}
+	}
 }
