@@ -1,3 +1,6 @@
+
+package studentmanagement;
+
 public class Student {
     private String name;
     private String id;
@@ -50,10 +53,10 @@ public class Student {
         this.group="K59CB";
     }
     public Student (){
-        this.name= "SV";
+        this.name= "Ta Hong Ngoc";
         this.id="000";
         this.group="K64";
-        this.email="abc@gmail.com";
+        this.email="uetvnu@gmail.com";
     }
     public Student (Student s){
         this.name= s.name;
@@ -61,5 +64,6 @@ public class Student {
         this.group= s.group;
         this.email= s.email;
     }
+    
     
 }
