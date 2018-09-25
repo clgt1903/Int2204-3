@@ -25,7 +25,7 @@ public class Bai1 {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-	Bai1 b1 = new Bai1;    
+	Bai1 b1 = new Bai1();    
         int a,b,n;
         a=scan.nextInt();
         b=scan.nextInt();
