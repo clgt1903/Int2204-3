@@ -47,6 +47,7 @@ public class PS
     }
 //rut on phan so
     public  PS rutGon(PS s) {
+        PS p = new PS(0,0);
         if(s.tu==0) {       //truong hop 0/0
             s.mau = 0;
             return s;
@@ -58,12 +59,12 @@ public class PS
         }
         if(s.tu>0&&s.mau<0)         //truong hop mau<0 & tu>0
         {
-            s.tu=-(s.tu / PS.ucln( s.tu , s.mau ));             //lay doi so cua tu va tri tuyet doi cua mau + rut gon phan so
-            s.mau=Math.abs(s.mau)/PS.ucln( s.tu , s.mau );
+            s.tu=-(s.tu / p.ucln( s.tu , s.mau ));             //lay doi so cua tu va tri tuyet doi cua mau + rut gon phan so
+            s.mau=Math.abs(s.mau)/p.ucln( s.tu , s.mau );
             return s;
         }
-        s.tu = s.tu / PS.ucln( s.tu ,  s.mau );
-        s.mau = s.mau / PS.ucln( s.tu ,  s.mau );
+        s.tu = s.tu / p.ucln( s.tu ,  s.mau );
+        s.mau = s.mau / p.ucln( s.tu ,  s.mau );
         return s;
     }
 
