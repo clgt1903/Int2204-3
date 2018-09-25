@@ -20,12 +20,8 @@ public class StudentManagement{
 		
 	}
 	public static boolean sameGroup(Student s1,Student s2){
-		if(s1.getGroup()==s2.getGroup()){
-			return true;
-		}
-		else{
-			return false;
-		}
+		return s1.getGroup().equals(s2.getGroup());
+		
 	}
 	public static void main(String [] agrs){
 		Student[] students;
