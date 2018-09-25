@@ -1,6 +1,6 @@
 package com.company;
 import java.util.Scanner;
-public class Main {
+public class Bai1 {
 
     public int fibonaci(int n){      //ham de qui
         if(n==0||n==1)          //f[0]=f[1]=1
@@ -25,12 +25,13 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
+	Bai1 b1 = new Bai1;    
         int a,b,n;
         a=scan.nextInt();
         b=scan.nextInt();
         n=scan.nextInt();
 
-	    System.out.println("UCLN cua a & b là : " + Main.ucln(a,b));
-        System.out.print("fibonaci thu "+n+" bang " + Main.fibonaci(n));
+	    System.out.println("UCLN cua a & b là : " + b1.ucln(a,b));
+        System.out.print("fibonaci thu "+n+" bang " + b1.fibonaci(n));
     }
 }
