@@ -1,4 +1,4 @@
-public class Challenges 
+public class Challenge1 
 {
    public int GCD(int a , int b)
 		{
@@ -21,7 +21,7 @@ public class Challenges
 	}
    public static void main (String[] args)
 		{
-			Challenges n=new Challenges();
+			Challenge1 n=new Challenge1();
 			System.out.println(n.GCD(6,36));
 			System.out.println(n.fibo(3));
 		}
