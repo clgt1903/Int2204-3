@@ -3,17 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-/**
- *
- * @author Administrator
- */
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Lab04;
+package lab04;
 
 /**
  *
@@ -39,13 +29,14 @@ public class Lab04 {
         bmi=a/(b*b);
         if(bmi<18.5)
         {   return "Thieu Can"; }
-        else if(bmi>=18.5 && bmi<=22.99)
+        else if(bmi>=18.5 && bmi<23)
         {   return "Binh Thuong";
         }
-        else if(bmi>23 && bmi<=24.99)
+        else if(bmi>=23 && bmi<25)
         {   return "Thua can";
         }
         else 
             return "Beo Phi";
+        
     }
 }
